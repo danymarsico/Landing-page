@@ -8,22 +8,47 @@ flex-wrap: wrap;
 }
 
 .header {
+    height: 450px;
     display: flex;
-    flex-shrink: 1;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: #1F2937;
     color: white;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 150px 0 150px;
     margin-bottom: auto;
 }
+
+.top {
+    height: 80;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-hero {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+#placeholder {
+    width: 450px;
+    height: 200px;
+    background-color: #e5e7eb79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo {
     font-size: 24px;
     color: #f9faf8;
     font-weight: 900;
     padding: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
+    margin-left: 68px;
 }
 
 .menu {
@@ -48,6 +73,7 @@ a {
 }
 
 .in-hero {
+    width: 410px;
     font-weight: normal;
     font-size: 18px;
 }
@@ -71,7 +97,7 @@ button {
 .info {
     font-size: 36px;
     font-weight: 800;
-    margin-top: 150px;
+    margin: 20px;
     color: #1F2937;
     display: flex;
     flex: 0 1;
@@ -86,13 +112,26 @@ button {
     gap: 30px;
 }
 
+.c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .box {
-    width: 225x;
-    height: 225px;
+    width: 200px;
+    height: 200px;
     border-color: #3882F6;
     border-style: solid;
     border-radius: 15px;
     border-width: 4px;
+}
+
+p {
+    width: 180px;
+    text-align: center;
+    font-size: 18px;
 }
 
 .quote {
@@ -112,21 +151,49 @@ button {
 }
 
 .banner {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 10px;
     margin: 200px;
-    padding: 100px;
+    padding: 50px 250px;
     background-color: #3882F6;
     color: #E5E7EB;
-    font-weight: bold;
+    font-weight: 900;
     font-size: 18px;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    font-size: 25px;
+}
+
+.banner p {
+    text-align: start;
+    font-weight: normal;
+    width: 600px;
+    margin-top: 0px;
+}
+
+.banner button {
+    border-color: #E5E7EB;
+    border-style: solid;
+    width: 100px;
 }
 
 
 
 .footer {
+    height: 70px;
     background-color: #1F2937;
     color: white;
     font-weight: bold;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
