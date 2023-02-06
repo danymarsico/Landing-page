@@ -1,19 +1,27 @@
 body {
 font-family: 'Roboto', sans-serif;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+flex-wrap: wrap;
 }
 
 .header {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: #1F2937;
     color: white;
     justify-content: space-between;
+    padding: 0 150px 0 150px;
+    margin-bottom: auto;
 }
 .logo {
     font-size: 24px;
     color: #f9faf8;
     font-weight: 900;
+    padding: 20px;
+    margin-bottom: 80px;
 }
 
 .menu {
@@ -25,10 +33,31 @@ font-family: 'Roboto', sans-serif;
 }
 
 a {
-    color: white;
+    color: #E5E7EB;
     text-decoration: none;
+    font-size: 18px;
 }
 
+.hero {
+    width: 280px;
+    font-size: 48px;
+    font-weight: 800;
+    color: #f9faf8;
+}
+
+.in-hero {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+button {
+    background-color: #3882F6;
+    color: #f9faf8;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 15px;
+}
 .container {
     background-color: white;
     display: flex;
@@ -36,9 +65,19 @@ a {
     justify-content: center;
 }
 
+.info {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .footer {
     background-color: #1F2937;
     color: white;
+    font-weight: bold;
     display: flex;
     justify-content: center;
 }
