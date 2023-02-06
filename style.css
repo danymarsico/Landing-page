@@ -1,6 +1,7 @@
 body {
 font-family: 'Roboto', sans-serif;
 display: flex;
+flex-shrink: 1;
 flex-direction: column;
 justify-content: space-around;
 flex-wrap: wrap;
@@ -8,6 +9,7 @@ flex-wrap: wrap;
 
 .header {
     display: flex;
+    flex-shrink: 1;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: #1F2937;
@@ -61,6 +63,7 @@ button {
 .container {
     background-color: white;
     display: flex;
+    flex-shrink: 1;
     flex-flow: column wrap;
     justify-content: center;
 }
@@ -68,11 +71,57 @@ button {
 .info {
     font-size: 36px;
     font-weight: 800;
+    margin-top: 150px;
     color: #1F2937;
     display: flex;
+    flex: 0 1;
     flex-direction: column;
     align-items: center;
 }
+
+.cards {
+    display: flex;
+    justify-content: center;
+    padding: 150px;
+    gap: 30px;
+}
+
+.box {
+    width: 225x;
+    height: 225px;
+    border-color: #3882F6;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 4px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 500;
+    color: #1F2937;
+    padding: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.quote h2 {
+    margin-left: auto;
+}
+
+.banner {
+    border-radius: 10px;
+    margin: 200px;
+    padding: 100px;
+    background-color: #3882F6;
+    color: #E5E7EB;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
 
 .footer {
     background-color: #1F2937;
